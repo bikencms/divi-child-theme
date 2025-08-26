@@ -1,4 +1,14 @@
 <?php
+
+add_filter('https_ssl_verify', function () {
+	return false;
+});
+
+add_filter('http_request_args', function($args) {
+	$args['reject_unsafe_urls'] = false;
+	return $args;
+});
+
 require "plugin-update-checker-v5/plugin-update-checker.php";
 
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
