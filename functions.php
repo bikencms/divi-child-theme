@@ -4,11 +4,10 @@ require "plugin-update-checker-v5/plugin-update-checker.php";
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://example.com/path/to/details.json',
+	'https://demo1.sierra.365villas.xyz/wp-content/uploads/theme.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
-	'unique-plugin-or-theme-slug'
+	'divi-child-them'
 );
-
 function divi__child_theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
