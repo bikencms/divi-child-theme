@@ -4,7 +4,7 @@ require "plugin-update-checker-v5/plugin-update-checker.php";
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://demo1.sierra.365villas.xyz/wp-content/uploads/theme.json',
+	'https://demo1.sierra.365villas.xyz/wp-content/uploads/details.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'divi-child-theme'
 );
